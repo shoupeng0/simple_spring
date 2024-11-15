@@ -14,7 +14,7 @@ public class JdkAopProxy implements AopProxy {
     //被代理的目标对象
     private Object target;
 
-    //环绕通知的方法
+    //通知的方法
     private List<MethodInterceptor> adviceMethods;
 
     public JdkAopProxy(Object target, List<MethodInterceptor> adviceMethods) {

@@ -4,7 +4,7 @@ import org.aopalliance.intercept.Joinpoint;
 
 import java.lang.reflect.Method;
 
-public interface MethodInvocation extends Joinpoint {
+public interface MethodInvocation {
 
     /**
      * 获得执行链中目标方法的实参
@@ -23,5 +23,7 @@ public interface MethodInvocation extends Joinpoint {
      * @return
      */
     Method getMethod();
+
+    Object proceed() throws Throwable;
 
 }
